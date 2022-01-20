@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box-fixed</title>
+    <style>
+        .fixedbox{
+            width: 600px;
+            height: 400px;
+            display: flex;
+            justify-content: stretch;
+            border:2px solid royalblue;
+        }
+        .box{
+            width: 150px;
+            border: 1px solid red;
+            background-color: rosybrown;
+            font-size: 3em;
+        }
+        #box2{
+            flex-grow: 1;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Now box will fixed here</h1>
+    <div class="fixedbox">
+        <div class="box">BOX1</div>
+        <div class="box" id="box2">BOX2</div>
+    </div>
+</body>
+</html>
